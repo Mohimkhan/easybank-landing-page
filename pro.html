@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .title{
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .info{
+            font-size: 10px;
+            font-weight: 400;
+        }
+        .img{
+            width: 100%;
+            max-width: 100%;
+            object-fit: cover;
+        }
+        .size{
+           min-height: 126px;
+           max-height: 126px;
+        }
+        .container{
+            width:90%;    
+            max-width:90%;
+            margin-inline: auto;
+            display: flex;
+            justify-content:space-between;
+            flex-direction: row;
+        }
+        .one,
+        .two,
+        .three,
+        .four{
+            width: 22%;
+            max-width: 22%;
+            text-align: center;
+            background-color: blue;
+        }
+        .one,
+        .two,
+        .three{
+                margin-bottom: 0px;
+            }
+        @media only screen and (max-width:700px){
+            .container{
+                align-items: center;
+                flex-direction: column;
+            }
+            .one,
+            .two,
+            .three{
+                margin-bottom: 15px;
+            }
+            .one,
+            .two,
+            .three,
+            .four{
+            width: 100%;
+            max-width: 97%;
+            text-align: center;
+            background-color: blue;
+           }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">
+            <img src="/images/image-currency.jpg" class="img size" alt="">
+            <h1 class="title">NETWORK WORK</h1>
+            <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, praesentium!</p>
+        </div>
+        <div class="two">
+            <img src="/images/image-confetti.jpg" class="img size" alt="">
+            <h1 class="title">NETWORK WORK</h1>
+            <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, praesentium!</p>
+        </div>
+        <div class="three">
+            <img src="/images/image-restaurant.jpg" class="img size" alt="">
+            <h1 class="title">NETWORK WORK</h1>
+            <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, praesentium!</p>
+        </div>
+        <div class="four">
+            <img src="/images/image-plane.jpg" class="img size" alt="">
+           
+            <h1 class="title">NETWORK WORK</h1>
+            <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, praesentium!</p>
+        </div>
+    </div>
+</body>
+</html>
