@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+:root {
+    /* #Primary# */
+    --clr-primary-100: hsl(0, 0%, 100%);
+    --clr-primary-200: hsl(0, 0%, 98%);
+    --clr-primary-300: hsl(220, 16%, 96%);
+    --clr-primary-400: hsl(233, 8%, 62%);
+    --clr-primary-500: hsl(192, 70%, 51%);
+    --clr-primary-600: hsl(136, 65%, 51%);
+    --clr-primary-700: hsl(233, 26%, 24%);
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Public Sans', sans-serif;
+}
+
+
+/* #############
+ Main-Container
+############# */
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--clr-primary-300);
+}
+
+
+/* #############
+ Header Section
+############# */
+
+header {
+    background-color: var(--clr-primary-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 59px;
+    z-index: 10;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 90%;
+}
+
+
+/* #############
+    Hamburger
+############# */
+
+.hamburger {
+    display: block;
+}
+
+
+/* #############
+    Nav links
+############# */
+
+nav ul {
+    display: none;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 44px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--clr-primary-400);
+    border-bottom: 0px;
+    padding-bottom: 2px;
+    font-weight: 500;
+}
+
+nav li:last-of-type {
+    margin-right: 0;
+}
+
+nav a:hover {
+    border-bottom: 1px solid var(--clr-primary-400);
+}
+
+
+/* #############
+    Navbar
+############# */
+
+.navbar {
+    background-color: var(--clr-primary-100);
+    position: absolute;
+    width: 345px;
+    height: 261px;
+    padding-top: 30px;
+    box-shadow:  9px -59px 350px 116px var(--clr-primary-700);;
+    border-radius: 5px;
+    z-index: 2;
+    top: -9999px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.2s linear;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar a {
+    color: hsl(225, 2.8%, 28.2%);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.navbar li {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+
+/* #############
+    Menubar
+############# */
+
+.menubar {
+    background-color: var(--clr-primary-100);
+    border: 0;
+}
+
+
+/* #############
+    Buttons
+############# */
+
+.btn {
+    display: none;
+}
+
+.btn-btn {
+    padding: 8px 20px;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    color: var(--clr-primary-100);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 0;
+}
+
+
+/* #############
+  Column Section
+############# */
+
+.wrapper {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    place-items: center;
+    grid-auto-flow: row;
+}
+
+.column {
+    height: 777px;
+}
+
+.col1 {
+    overflow: hidden;
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.col2 {
+    text-align: center;
+    margin-top: -89px;
+}
+
+.title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 400;
+    opacity: 73%;
+    margin-bottom: 15px;
+}
+
+.info {
+    line-height: 1.5;
+    margin-bottom: 22px;
+    opacity: 40%;
+    font-size: 16px;
+}
+
+.btn1 {
+    text-align: center;
+}
+
+.bg-image {
+    max-width: 100%;
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: -15%;
+}
+
+.mobile {
+    bottom: 115px;
+    max-width: 100%;
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.desktop {
+    display: none;
+}
+
+
+/* #############
+  Feature-Lists
+############# */
+
+.feature-lists {
+    width: 90%;
+    max-width: 90%;
+    margin-inline: auto;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feature:last-of-type {
+    margin-bottom: 0;
+}
+
+.title1 {
+    font-size: 26px;
+    margin-top: 15px;
+}
+
+.feature-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.sub-title {
+    width: 100%;
+    max-width: 464px;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* #############
+  Article-Lists
+############# */
+
+.article-lists {
+    width: 90%;
+    max-width: 90%;
+    margin-top: 30px;
+    margin-inline: auto;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-color: var(--clr-primary-100);
+    max-width: 95%;
+    margin-inline: auto;
+}
+
+.article:last-of-type {
+    margin-bottom: 60px;
+}
+
+.images {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.min {
+    min-height: 210px;
+    max-height: 210px;
+}
+
+.size {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.text {
+    width: 80%;
+    max-width: 80%;
+    margin: auto;
+}
+
+.info1 {
+    margin-bottom: 12px;
+    margin-top: 23px;
+}
+
+
+/* #############
+  Footer-Lists
+############# */
+
+.footer-lists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 90%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-primary-700);
+    height: 74vh;
+}
+
+.links .page1 .page2 .information {
+    width: 30%;
+    max-width: 30%;
+}
+
+.page2 {
+    margin-bottom: 20px;
+}
+
+.information {
+    text-align: center;
+}
+
+.footer-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--clr-primary-400);
+    font-weight: 500;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.copyright {
+    margin-top: 16px;
+    color: var(--clr-primary-400);
+    font-weight: 700;
+}
+
+.social {
+    margin-top: 30px;
+}
+
+.links {
+    margin-bottom: 25px;
+}
+
+.links img {
+    margin-right: 10px;
+}
+
+.links img:last-of-type {
+    margin-right: 0;
+}
