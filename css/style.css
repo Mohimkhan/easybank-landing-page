@@ -177,6 +177,8 @@ nav a:hover,
 .btn-btn:hover {
     background-image:linear-gradient(200deg, hsl(136, 100%, 53%), hsl(192, 100%, 54%));
     transition: background-image 3s linear;
+    box-shadow: 0 0 8px hsl(136, 100%, 53%)
+    , 0 0 8px hsl(192, 100%, 54%);
 }
 
 
