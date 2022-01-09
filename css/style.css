@@ -126,7 +126,7 @@ nav a:hover,
     top: -9999px;
     left: 50%;
     transform: translate(-50%,-50%);
-    transition: all 0.2s linear;
+    transition: all 0.2s ease-out;
 }
 
 .navbar ul {
@@ -178,7 +178,7 @@ nav a:hover,
     background-image:linear-gradient(200deg, hsl(136, 100%, 53%), hsl(192, 100%, 54%));
     transition: background-image 3s linear;
     box-shadow: 0 0 8px hsl(136, 100%, 53%)
-    , 0 0 8px hsl(192, 100%, 54%);
+    , 0 0 10px hsl(192, 100%, 54%);
 }
 
 
@@ -209,7 +209,7 @@ nav a:hover,
 
 .col2 {
     text-align: center;
-    margin-top: -89px;
+    margin-top: -53px;
 }
 
 .title {
@@ -372,7 +372,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: var(--clr-primary-700);
-    height: 74vh;
+    padding-block: 1.5rem;
 }
 
 .links .page1 .page2 .information {

@@ -292,15 +292,17 @@
 let open = document.getElementById('demo');
 let hide = document.getElementById('hide');
 let menuBar = document.getElementById('menu');
+let menuIcon = document.getElementById("menuIcon");
 menuBar.addEventListener("click", function(e) {
-    console.log('clicked');
-    if (open.style.top == '31%') {
+    if (open.style.top == '209px') {
         open.style.top = '-9999px';
         hide.style.zIndex = '1';
+        menuIcon.src = "/images/icon-hamburger.svg";
     }
     else {
-        open.style.top = '31%';
+        open.style.top = '209px';
         hide.style.zIndex = '-1';
+        menuIcon.src = "/images/icon-close.svg";
     }
 });
 
