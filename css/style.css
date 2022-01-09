@@ -442,3 +442,25 @@ footer {
 .links img:last-of-type {
     margin-right: 0;
 }
+
+/* #############
+  Footer-Lists
+############# */
+.ani {
+    animation: bounce 4s linear 1 normal;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-0px);
+    }
+    25%{
+        transform: translateY(-35px) scale(1.1) rotateZ(90deg);
+    }
+    50%{
+        transform: translateY(-40px) scale(1.3) rotateZ(180deg);
+    }
+    100%{
+        transform: translateY(-45px) scale(1.5) rotateZ(270deg);
+    }
+}
