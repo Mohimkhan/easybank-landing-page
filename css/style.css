@@ -28,7 +28,7 @@ body {
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    scroll-padding-top: 6rem;
+    scroll-padding-top: 7rem;
 }
 
 /* #############
@@ -302,7 +302,7 @@ nav a:hover,
 .article-lists {
     width: 90%;
     max-width: 90%;
-    margin-top: 30px;
+    margin-top: 95px;
     margin-inline: auto;
 }
 
@@ -318,6 +318,7 @@ nav a:hover,
     background-color: var(--clr-primary-100);
     max-width: 95%;
     margin-inline: auto;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
 
 .article:last-of-type {
