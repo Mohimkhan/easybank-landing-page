@@ -332,6 +332,10 @@ nav a:hover,
     object-fit: cover;
 }
 
+.images:hover {
+    opacity: 50%;
+}
+
 .min {
     min-height: 210px;
     max-height: 210px;
