@@ -454,11 +454,11 @@ footer {
 }
 
 .type {
-    width: 18ch;
+    width: 22ch;
     font-family: monospace;
     overflow: hidden;
     border-right: solid 1px;
-    animation: typing 5s steps(18) infinite;
+    animation: typing 5s steps(22) infinite;
 }
 
 /* #############
