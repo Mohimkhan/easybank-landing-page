@@ -448,6 +448,11 @@ footer {
     margin-right: 0;
 }
 
+.fun:hover {
+    transform: rotateZ(240deg);
+    transition: rotate 3ms ease-in-out;
+}
+
 /* #############
   Footer-Lists
 ############# */
